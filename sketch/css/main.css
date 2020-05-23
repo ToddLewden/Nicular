@@ -1,0 +1,29 @@
+body{
+    background-color: #e7e7e7;
+    font-size: 12px;
+    padding:0px;
+    margin:0px;
+}
+
+#main_container{
+    margin:1em;
+    background-color: #dbdbdb;
+    padding:0.2em;
+    border-radius: 15px;
+    position: relative;
+    z-index: 55;
+}
+
+
+#inner_main_container{
+    position: relative;
+    margin:0.5em;
+    background-color: #ffffff;
+    padding:0.5em;
+    border-radius: 15px;
+   opacity: 1;
+}
+
+#banner_header{
+    color:#00b8e6;
+}
