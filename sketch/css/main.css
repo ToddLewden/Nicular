@@ -21,9 +21,9 @@ body{
     background-color: #ffffff;
     padding:0.5em;
     border-radius: 15px;
-   opacity: 1;
 }
 
 #banner_header{
     color:#00b8e6;
+    font-family: 'Montserrat', sans-serif;
 }
