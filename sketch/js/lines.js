@@ -1,4 +1,4 @@
-var w = c.width = window.innerWidth,
+let w = c.width = window.innerWidth,
     h = c.height = window.innerHeight,
     ctx = c.getContext( '2d' ),
     
@@ -38,7 +38,7 @@ function init() {
   
   lines.length = 0;
   
-  for( var i = 0; i < initialLines; ++i )
+  for( let i = 0; i < initialLines; ++i )
     lines.push( new Line( starter ) );
   
   ctx.fillStyle = '#222';
@@ -47,12 +47,7 @@ function init() {
   // if you want a cookie ;)
   ctx.lineCap = 'round';
 }
-function getColor( x ) {
-  
-  return 'hsl( hue, 80%, 50% )'.replace(
-  	'hue', x / w * 360 + frame
-  );
-}
+
 function anim() {
   
   window.requestAnimationFrame( anim );
@@ -60,11 +55,11 @@ function anim() {
   ++frame;
   
   ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(0,0,0,.02)';
+  ctx.fillStyle = 'rgba(255,255,255,.02)';
   ctx.fillRect( 0, 0, w, h );
   ctx.shadowBlur = .5;
   
-  for( var i = 0; i < lines.length; ++i ) 
+  for( let i = 0; i < lines.length; ++i ) 
     
     if( lines[ i ].step() ) { // if true it's dead
       
@@ -84,7 +79,7 @@ function anim() {
     lines.push( new Line( starter ) );
     
     // cover the middle;
-    ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
+    ctx.fillStyle = ctx.shadowColor = 'hsl( 194, 80%, 50% )';
     ctx.beginPath();
     ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
     ctx.fill();
@@ -99,7 +94,7 @@ function Line( parent ) {
   
   do {
     
-    var dir = dirs[ ( Math.random() * dirs.length ) |0 ];
+    let dir = dirs[ ( Math.random() * dirs.length ) |0 ];
     this.vx = dir[ 0 ];
     this.vy = dir[ 1 ];
     
@@ -114,9 +109,9 @@ function Line( parent ) {
 }
 Line.prototype.step = function() {
   
-  var dead = false;
+  let dead = false;
   
-  var prevX = this.x,
+  let prevX = this.x,
       prevY = this.y;
   
   this.x += this.vx;
@@ -142,7 +137,7 @@ Line.prototype.step = function() {
     if( Math.random() < .2 ) dead = true;
   }
   
-  ctx.strokeStyle = ctx.shadowColor = getColor( this.x );
+  ctx.strokeStyle = ctx.shadowColor = 'hsl( 194, 80%, 50% )';
   ctx.beginPath();
   ctx.lineWidth = this.width;
   ctx.moveTo( this.x, this.y );
