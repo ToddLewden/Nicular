@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Nicular</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/line.css" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-<body>
-    <canvas id="c"></canvas>    
-    <div id="main_container" style="background-color: rgba(255, 255, 255, 0.9)">
-            <header>
-                <h1 id="banner_header">Nicular</h1>
-            </header>
-            <main>
 
-            </main>
+<body>
+    <canvas id="c"></canvas>
+    <div id="main" style="background-color: rgba(255, 255, 255, 0.9)">
+        <header>
+            <h1 id="banner_header">Nicular</h1>
+        </header>
+        <main>
+
+        </main>
     </div>
+
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
-      </div>
-      
-      <!-- Use any element to open the sidenav -->
-      <span  id="nav_button" onclick="openNav()">&gt;&gt;</span>
-</div>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span id="nav_button" onclick="openNav()">&gt;&gt;</span>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-<script src="js/lines.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/lines.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
