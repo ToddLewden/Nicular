@@ -53,11 +53,11 @@ body{
 
 
 .fade-out {
-    animation: fadeOut ease 0.75s;
-    -webkit-animation: fadeOut ease 0.75s;
-    -moz-animation: fadeOut ease 0.75s;
-    -o-animation: fadeOut ease 0.75s;
-    -ms-animation: fadeOut ease 0.75s;
+    animation: fadeOut ease 0.75s forwards;
+    -webkit-animation: fadeOut ease 0.75s forwards;
+    -moz-animation: fadeOut ease 0.75s forwards;
+    -o-animation: fadeOut ease 0.75s forwards;
+    -ms-animation: fadeOut ease 0.75s forwards;
   }
   @keyframes fadeOut {
     0% {
@@ -102,13 +102,14 @@ body{
     100% {
       opacity:0;
   }
+}
 
 .fade-in {
-    animation: fadeIn ease 10s;
-    -webkit-animation: fadeIn ease 10s;
-    -moz-animation: fadeIn ease 10s;
-    -o-animation: fadeIn ease 10s;
-    -ms-animation: fadeIn ease 10s;
+    animation: fadeIn ease 1s forwards;
+    -webkit-animation: fadeIn ease 1s forwards;
+    -moz-animation: fadeIn ease 1s forwards;
+    -o-animation: fadeIn ease 1s forwards;
+    -ms-animation: fadeIn ease 1s forwards;
   }
   @keyframes fadeIn {
     0% {

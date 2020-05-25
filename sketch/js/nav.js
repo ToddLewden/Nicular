@@ -1,16 +1,28 @@
+function fader(element){
+    if(element.classList.contains('fade-out')){
+        element.classList.replace('fade-out','fade-in');
+    }
+    else if(element.classList.contains('fade-in')){
+        element.classList.replace('fade-in','fade-out');
+
+    }
+    else{
+        element.classList.add('fade-out');
+    }
+}
+
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "100vw";
-    document.getElementById("open_nav").style.display = "none"
-    document.getElementById("main_container").classList.add("fade-out");
-    document.getElementById("header_container").classList.add("fade-out");
+    fader(document.getElementById('open_nav'));
+    fader(document.getElementById("main_container"));
+    fader(document.getElementById("header_container"));
 };
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("open_nav").style.display = "inline-block";
-    document.getElementById("main_container").classList.replace("fade-out","fade-in");
-    document.getElementById("header_container").classList.replace("fade-out","fade-in");
-
+    fader(document.getElementById('open_nav'));
+    fader(document.getElementById("main_container"));
+    fader(document.getElementById("header_container"));
 }
