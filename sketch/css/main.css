@@ -5,7 +5,11 @@ body{
     margin:0px;
 }
 
-#main{
+#header_bar{
+  width:100vw;
+}
+
+#banner{
     margin-top:1em;
     margin-bottom:1em;
     margin-left:1em;
@@ -13,16 +17,32 @@ body{
     padding:0.2em;
     border-radius: 15px 0px 0px 15px;
     position: relative;
+    float:right;
     z-index: 55;
+    background-color: rgba(255, 255, 255, 0.9);
+    width:70vw;
 }
 
-#nav_button{
+#main_container{
+  clear:both;
+    margin-top:10px;
+    margin-left:0px;
+    margin-bottom: 10px;
+    margin-right:0px;
+    padding:0.2em;    
+    z-index: 80;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#open_nav{
+    position: relative;
+    float: left;
     z-index:60;
     border-radius: 0px 25px 25px 0px;
     background-color:white;
-    display:inline-block;
     padding:15px 15px 15px 5px;
+    margin-top:1em;
     font-size: 1.5em;
 }
 
@@ -30,3 +50,106 @@ body{
     color:#00b8e6;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+.fade-out {
+    animation: fadeOut ease 0.75s;
+    -webkit-animation: fadeOut ease 0.75s;
+    -moz-animation: fadeOut ease 0.75s;
+    -o-animation: fadeOut ease 0.75s;
+    -ms-animation: fadeOut ease 0.75s;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+  }
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
