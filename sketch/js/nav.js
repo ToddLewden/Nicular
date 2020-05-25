@@ -16,7 +16,7 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "100vw";
     fader(document.getElementById('open_nav'));
     fader(document.getElementById("main_container"));
-    fader(document.getElementById("header_container"));
+    fader(document.getElementById("header_bar"));
 };
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
@@ -24,5 +24,5 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     fader(document.getElementById('open_nav'));
     fader(document.getElementById("main_container"));
-    fader(document.getElementById("header_container"));
+    fader(document.getElementById("header_bar"));
 }
