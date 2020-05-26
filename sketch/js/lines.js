@@ -55,7 +55,7 @@ function anim() {
   ++frame;
   
   ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(255,255,255,.02)';
+  ctx.fillStyle = 'rgba(80,80,80,.1)';
   ctx.fillRect( 0, 0, w, h );
   ctx.shadowBlur = .5;
   
