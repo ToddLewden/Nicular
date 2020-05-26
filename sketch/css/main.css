@@ -1,6 +1,5 @@
-
-
 #main_container{
+  flex: 1 0 auto;
     clear:both;
     margin-top:10px;
     margin-left:0px;
@@ -9,5 +8,5 @@
     padding:0.2em;    
     z-index: 80;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
 }

@@ -1,11 +1,12 @@
 #header_bar{
+  flex: 1 0 auto;
     width:100vw;
+    z-index: 55;
   }
   
   #open_nav{
     position: relative;
     float: left;
-    z-index:60;
     border-radius: 0px 25px 25px 0px;
     background-color:white;
     padding:15px 15px 15px 5px;
@@ -23,8 +24,8 @@
       border-radius: 15px 0px 0px 15px;
       position: relative;
       float:right;
-      z-index: 55;
-      background-color: rgba(255, 255, 255, 0.9);
+      
+      background-color: rgba(255, 255, 255, 1);
       /* background: radial-gradient(circle, rgba(255,255,255,0.9) 32%, rgba(241,241,241,0.9) 67%, rgba(230,230,230,0.9) 100%); */
       width:70vw;
   }
