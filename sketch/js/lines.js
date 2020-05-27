@@ -156,8 +156,8 @@ anim();
 
 window.addEventListener( 'resize', function() {
   
-  w = c.width = window.innerWidth;
-  h = c.height = window.innerHeight;
+  w = c.width = document.getElementById('root').clientWidth
+  h = c.height = document.getElementById('root').clientHeight
   starter.x = w / 2;
   starter.y = h / 2;
   
