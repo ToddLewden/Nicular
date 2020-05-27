@@ -1,3 +1,7 @@
+//When managing this for different screen sizes, the speeds
+// and number of lines should increase based on the screen size
+// maybe make a ratio between them?
+
 let w = c.width = window.innerWidth,
     h = c.height = window.innerHeight,
     ctx = c.getContext( '2d' ),

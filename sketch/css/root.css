@@ -1,9 +1,9 @@
-body{
-    height:100vh;
+#root {
+    max-width: 800px;
     background-color: #000;
     font-size: 12px;
-    padding:0px;
-    margin:0px;
+    padding: 0px;
+    margin: auto;
     display: flex;
     flex-direction: column;
 }
