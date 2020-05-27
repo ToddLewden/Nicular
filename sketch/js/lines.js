@@ -2,8 +2,8 @@
 // and number of lines should increase based on the screen size
 // maybe make a ratio between them?
 
-let w = c.width = window.innerWidth,
-    h = c.height = window.innerHeight,
+let w = c.width = document.getElementById('root').clientWidth,
+    h = c.height = document.getElementById('root').clientHeight,
     ctx = c.getContext( '2d' ),
     
     minDist = 5,
