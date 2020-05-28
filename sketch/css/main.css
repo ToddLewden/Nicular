@@ -1,7 +1,13 @@
 #main_container{
   flex: 1 0 auto;
-    padding:0.2em;    
-    z-index: 80;
-    position: relative;
-    background-color: rgba(255, 255, 255, 1);
+  padding:0.2em;    
+  z-index: 80;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  #main_container{
+      border-radius: 20px 0px 20px 0px;
+  }
 }
