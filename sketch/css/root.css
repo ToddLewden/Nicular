@@ -46,19 +46,12 @@ body {
 /*MAIN/CONTENT AREA*/
 
 #main_container {
-    flex: 1 0 auto;
-    padding: 0.2em;
+    padding:1em;
     position: relative;
     background-color: var(--primarycolor);
-    width:75%;
+    width:80%;
     border-radius: 15px 0px 15px 0px;
     margin-left:0.5em;
-}
-
-@media only screen and (min-width: 768px) {
-    #main_container {
-        border-radius: 20px 0px 20px 0px;
-    }
 }
 
 
@@ -90,6 +83,7 @@ body {
     font-size: 25px;
     display: block;
     transition: 0.3s;
+    color:var(--primarycolor)
 }
 
 
