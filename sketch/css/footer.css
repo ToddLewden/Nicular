@@ -7,7 +7,8 @@
     padding: 0.2em;
     z-index: 80;
     position: relative;
-    background-color: rgba(255, 255, 255, 1);
+    background-color:var(--footercolor);
+    color:white;
     border-radius: 0px 15px 15px 0px;
     flex-shrink: 0;
     width:80%;

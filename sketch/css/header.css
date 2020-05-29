@@ -3,43 +3,27 @@
   z-index: 55;
   }
   
-  #open_nav{
-    position: relative;
-    float: left;
-    border-radius: 0px 25px 25px 0px;
-    background-color:white;
-    padding:15px 15px 15px 5px;
-    margin-top:1em;
-    font-size: 1.5em;
-  }
-  
-  #banner{
+  #banner_box{
       text-align: center;
       margin-top:1em;
       margin-bottom:1em;
       margin-left:1em;
-      margin-right:0px;
-      padding:0.2em;
-      border-radius: 15px 0px 0px 15px;
       position: relative;
-      float:right;
-      background-color: rgba(255, 255, 255, 1);
+      float:left;
       /* background: radial-gradient(circle, rgba(255,255,255,0.9) 32%, rgba(241,241,241,0.9) 67%, rgba(230,230,230,0.9) 100%); */
       max-width:70%;
       min-width: 50%;
   }
-  
+  #banner{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px 0px 0px 15px;
+    margin-left:0px;
+    padding:0.2em;
+  }
   
 #banner_title{
-  color:rgba(0, 120, 255, 1);
+  color:var(--primarycolor);
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-  text-align: right;
   padding-right:10px;
-}
-
-@media only screen and (min-width: 768px) {
-  #banner_title{
-      text-align: right;
-  }
 }

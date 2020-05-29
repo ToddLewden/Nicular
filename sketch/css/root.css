@@ -1,8 +1,15 @@
 body{margin:0px;}
 
+:root{
+    --primarycolor:rgb(158,220,233);
+    --secondarycolor:rgb(239,251,254);
+    --footercolor:rgb(211,211,211);
+    --navcolor:rgb(230,248,252);
+}
+
 #root {
     max-width: 800px;
-    background-color: #000;
+    background-color: #fff;
     font-size: 12px;
     padding: 0px;
     margin: auto;
