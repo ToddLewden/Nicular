@@ -15,14 +15,16 @@ function fader(){
 }
 
 
+function clickNavBurger(){
+    let navButton = document.getElementById('openNavButton');
+    if(navButton.classList.contains('is-active')){
+        navButton.classList.remove('is-active');
+        document.getElementById("mySidenav").style.width = "0";
 
+    }
+    else{
+        navButton.classList.add('is-active');
+        document.getElementById("mySidenav").style.width = "100vw";
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100vw";
-    fader()
-};
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    fader()
+    }
 }
