@@ -15,7 +15,7 @@ body {
 
 #root {
     max-width: 800px;
-    font-size: 12px;
+    font-size: 15px;
     padding: 0px;
     margin: auto;
     display: flex;
@@ -226,7 +226,7 @@ body {
       transition-delay: 0.075s; }
 
 /*FOOTER*/
-.footer {
+footer {
     margin-top: 10px;
     margin-right: 0.5em;
     padding: 0.25em;
