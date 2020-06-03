@@ -107,6 +107,10 @@ body {
     .sidenav {
         display: none;
     }
+
+    #bar_nav{
+      display: inline-block;
+    }
 }
 
 @media screen and (max-height: 450px) {
