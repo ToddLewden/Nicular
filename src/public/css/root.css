@@ -60,6 +60,7 @@ body {
     position: relative;
     float: right;
     color:var(--primarycolor);
+    z-index: 150;
     
 }
 
