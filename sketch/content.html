@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nicular</title>
+    <style>
+        #root{
+            background-color:rgb(204, 204, 204);
+            color:red;
+        }
+        #a_child_element{
+            color:black;
+            background-color:yellow;
+        }
+
+    </style>
+
+<body>
+    <div id="root">
+        <p>N</p>
+        <p>I</p>
+        <p>C</p>
+        <p>U</p>
+        <p>L</p>
+        <p>A</p>
+        <p>R</p>
+
+        <p>
+            <span style="color:red;">N</span>
+            <span style="color:blue;">I</span>
+            <span style="color:yellow;">C</span>
+            <span style="color:green;">U</span>
+            <span style="color:purple;">L</span>
+            <span style="color:black;">A</span>
+            <span style="color:orange;">R</span>
+        </p>
+
+        <p><b>Refactor</b>:Nicular will go through existing websites and code to refactor or update them. The system may work but could it work better? Build out test solutions, enhance documentation, and improve performance.</p>
+
+        <p id="a_child_element"><b>Redesign</b>:Nicular can update your business appearance and aesthetic to both retain existing familiarity while still refreshing the design choices.</p>
+
+        <p><b>Mining Operations</b>:Nicular will assess what information the endeavor needs then find the most reliable way to consistenly retrieve the necessary data for operation usage.</p>
+        
+        <p><b>Complete Digital Solutions</b>:</p>
+    </div>
+
+
+    <script>
+        let body = document.getElementById('root');
+        let newNode = document.createElement("h1");
+        let textNode = document.createTextNode("FooBarFizzBuzz");
+        newNode.appendChild(textNode);
+        body.appendChild(newNode);
+    </script>
+</body>
+
+</html>
