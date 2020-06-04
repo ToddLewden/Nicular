@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nicular</title>
+    <style>
+        #background_canvas{
+            width:100vh;
+            height:100vh;
+        }
+    </style>
+<body>
+
+    <div id="root">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="80vw" height="80vh" version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <metadata>
+        <rdf:RDF>
+        <cc:Work rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+            <dc:title/>
+        </cc:Work>
+        </rdf:RDF>
+        </metadata>
+        <ellipse transform="matrix(.0055005 -.99998 1 .00012904 0 0)" cx="-259.23" cy="39.618" rx="24.546" ry="24.576" style="fill-rule:evenodd;stroke-width:.5932"/>
+        <ellipse transform="matrix(.0055005 -.99998 1 .00012904 0 0)" cx="10" cy="10" rx="10" ry="10" style="fill-rule:evenodd;stroke-width:.5932"/>
+        <ellipse transform="matrix(.0055005 -.99998 1 .00012904 0 0)" cx="-39.466" cy="38.564" rx="24.546" ry="24.576" style="fill-rule:evenodd;stroke-width:.5932"/>
+        <ellipse transform="matrix(.0055005 -.99998 1 .00012904 0 0)" cx="-39.466" cy="176.19" rx="24.546" ry="24.576" style="fill-rule:evenodd;stroke-width:.5932"/>
+        <ellipse transform="matrix(.0055005 -.99998 1 .00012904 0 0)" cx="-146.32" cy="38.74" rx="24.546" ry="24.576" style="fill-rule:evenodd;stroke-width:.5932"/>
+        <ellipse transform="matrix(.0055005 -.99998 1 .00012904 0 0)" cx="-147.96" cy="175.84" rx="24.546" ry="24.576" style="fill-rule:evenodd;stroke-width:.5932"/>
+        <ellipse transform="matrix(.0055005 -.99998 1 .00012904 0 0)" cx="-260.05" cy="175.66" rx="24.546" ry="24.576" style="fill-rule:evenodd;stroke-width:.5932"/>
+        <rect transform="matrix(-.014466 -.9999 .99997 -.0074398 0 0)" x="-231.48" y="74.819" width="149.18" height="57.355" style="stroke-width:.45334"/>
+        <path d="m34.018 59.418 0.75595 40.065 48.381 0.37797" style="fill:none;stroke-width:4.265;stroke:#000"/>
+        <path d="m74.839 99.786-40.065 0.75596-0.37797 48.381" style="fill:none;stroke-width:4.265;stroke:#000"/>
+        <path d="m86.041 200.33-50.959 1.0583-0.38446 48.381" style="fill:none;stroke-width:4.3015;stroke:#000"/>
+        <path d="m161.47 40.318-51.031 0.49665-0.69106 48.377" style="fill:none;stroke-width:4.265;stroke:#000"/>
+        <path d="m117.55 216.19 0.8301 51.026 48.381 0.37495" style="fill:none;stroke-width:4.265;stroke:#000"/>
+        <path d="m116.3 98.361 0.8301 51.026 48.381 0.37495" style="fill:none;stroke-width:4.265;stroke:#000"/>
+        </svg>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script>
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        function ready(callbackFunc) {
+        if (document.readyState !== 'loading') {
+            // Document is already ready, call the callback directly
+            callbackFunc();
+        } else if (document.addEventListener) {
+            // All modern browsers to register DOMContentLoaded
+            document.addEventListener('DOMContentLoaded', callbackFunc);
+        } else {
+            // Old IE browsers
+            document.attachEvent('onreadystatechange', function() {
+            if (document.readyState === 'complete') {
+                callbackFunc();
+            }
+            });
+        }
+        }
+        ready(function() {
+            //
+        });
+
+    </script>
+</body>
+
+</html>
