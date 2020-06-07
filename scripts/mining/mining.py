@@ -28,7 +28,7 @@ class Downloader():
                 self.google_track()
     
     def get_top_free_url(self):
-        result = findall(r'Free Apps.*href="([a-zA-Z0-9\%\:\-\&\\\/\?\=\;]*)',str(self.cur_source))[0]
+        result = findall(r'Free Apps.*href="([a-zA-Z0-9\%\:\-\&\\\/\?\=\;]*)',str(self.cur_source))
         top_free_url = 'https://play.google.com'+result
         self.get_page(top_free_url)
 
