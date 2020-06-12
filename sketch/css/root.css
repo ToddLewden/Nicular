@@ -3,24 +3,26 @@
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    color:white;
+    color: white;
+    text-shadow: 0 0 3px white, 0 0 5px black
 }
+
 
 :root {
-    --primarycolor: rgb(158, 220, 233);
-    --secondarycolor: rgb(239, 251, 254);
-    --footercolor: rgb(211, 211, 211);
-    --navcolor: rgb(230, 248, 252);
+    --primarycolor: rgb(0,211,255);
+    --secondarycolor:black;
+    --footercolor: rgb(233,233,233);
+    --navcolor: black;
 }
-
-#chimmichanga {
+#root {
     max-width: 800px;
     font-size: 15px;
     padding: 0px;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
+
 
 
 /* HEADER AREA */
@@ -40,9 +42,11 @@ body {
     color: var(--primarycolor);
     letter-spacing: 0.25em;
     font-size:2.5em;
+    margin: 0px;
+    font-family: 'Avian', sans-serif;
+    font-weight: normal;
+    text-shadow: none
 }
-
-
 
 /*MAIN/CONTENT AREA*/
 
@@ -84,7 +88,8 @@ body {
     font-size: 25px;
     display: block;
     transition: 0.3s;
-    color:var(--primarycolor)
+    color:var(--primarycolor);
+    text-shadow: none
 }
 
 
@@ -110,19 +115,20 @@ body {
     .sidenav {
         display: none;
     }
-    #bar_nav{
+    #bar_nav{ 
       position: relative;
       float: right;
       padding:0.5em;
       font-size: 1.5em;
+      text-shadow: none
     }
-
+/*Desktop Nav Text*/                     
     #bar_nav ul{
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color:var(--secondarycolor);
+      background-color:(--secondarycolor);
     }
     #bar_nav ul li{
       float:left;
@@ -236,7 +242,11 @@ footer {
     flex-shrink: 0;
     width: 80%;
     float:right;
+    font-family: 'Roboto', sans-serif;
+    color:#656565;
+    text-shadow: none
 }
+
 
 
 
