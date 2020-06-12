@@ -1,0 +1,5 @@
+Task Goal : "finalize the design for the footer bar" 
+
+status : "working on"
+
+notes : "foobar fizzbuzz"
